@@ -58,3 +58,15 @@ footer {
   color: #666;
   padding: 1rem;
 }
+
+.site-title {
+  font-size: 1.0em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.site-tagline {
+  font-size: 0.75em;
+  font-weight: normal;
+  color: #555;
+}
