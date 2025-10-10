@@ -9,17 +9,27 @@ body {
   color: #222;
 }
 
-/* Page layout */
-header, nav, main, footer {
+.layout {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
+}
+
+/* Banner image container */
+.banner {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Navigation */
 nav {
   background-color: #eaeaea;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   text-align: center;
 }
 
