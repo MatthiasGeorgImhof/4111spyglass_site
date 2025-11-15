@@ -3,46 +3,69 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>4111Spyglass R&D</title>
+  <title>4111Spyglass R&amp;D</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="layout">
     <div class="banner">
-      <img src="rnd_header.png" alt="R&D for reproducible, trustworthy systems: Exploring scalable solutions in climate tech and 
-software architecture.">
+      <img src="rnd_header.png" alt="R&amp;D banner: Embedded, modular systems for climate and sensor applications.">
     </div>
 
     <nav>
       <a href="index.html">Home</a> |
       <a href="consulting.html">Consulting</a> |
-      <a href="rnd.html">R&D</a> |
+      <a href="rnd.html">R&amp;D</a> |
       <a href="about_mgi.html">About</a>
     </nav>
 
     <header>
       <h1>
-        <span class="site-title">4111Spyglass R&D:</span>
+        <span class="site-title">4111Spyglass R&amp;D:</span>
         <span class="site-tagline">Embedded Systems for Autonomous Sensors</span>
       </h1>
     </header>
 
     <main>
-      <section>
-        <h2>Flight Control Architecture</h2>
-        <p>Semantic vector operations, gravity compensation, and diagnostic test suites for embedded platforms.</p>
-      </section>
+		<section>		  
+		  <p>Our R&amp;D efforts are structured around three pillars: <strong>Flight Control</strong>, <strong>Sensor Stack</strong>, and <strong>Software Integration</strong>. Together, they enable reproducible, scalable systems for climate technology and autonomous sensing.</p>
+		</section>    	
+    	
+		<section>
+		  <h2>Flight Control Systems</h2>
+		  <p>Our architecture is built on robust, proven design principles and industry‑standard components. It is designed for interoperability with established ecosystems, supporting common firmwares such as Betaflight, ArduPilot, and iNav. We prioritize reliability, maintainability, and compatibility with standard software frameworks.</p>
+		  <ul>
+		    <li><strong>Primary flight controllers:</strong> STM32F405 and STM32F765 platforms.</li>
+		    <li><strong>Auxiliary periphery controllers:</strong> STM32F103 and STM32F405 boards for extended sensor and interface support.</li>
+		    <li><strong>Electronic speed controller (ESC):</strong> STM32F051‑based design with dual motor controllers and eight servo ports for fixed‑wing applications.</li>
+		    <li><strong>Firmware compatibility:</strong> Betaflight, ArduPilot, iNav.</li>
+		    <li><strong>Design priorities:</strong> Emphasis on modular interfaces, accessible ports, and CAN‑bus communication.</li>
+		  </ul>
+		</section>
 
-      <section>
-        <h2>Hardware Integration</h2>
-        <p>STM32 HAL, PWM control, SPI interfaces, and abstraction layers for physical correctness.</p>
-      </section>
+		<section>
+		  <h2>Modular &amp; Flexible Sensor Stack</h2>
+		  <p>We are developing a distributed instrumentation platform built from modular boards designed for interoperability and reproducibility. Each module shares an 80×80 mm form factor for compatibility with CubeSat platforms, enabling flexible deployment across aerial and stationary applications.</p>
+		  <ul>
+		    <li><strong>Battery & Power Management:</strong> Core board for battery power and electronic power regulation.</li>
+		    <li><strong>Auxiliary Power:</strong> Support for stationary board applications and extended runtimes.</li>
+		    <li><strong>Avionics:</strong> Integrated 9‑DOF IMU and GPS for navigation and control.</li>
+		    <li><strong>Science Payload:</strong> Customizable board supporting sensors such as three cameras and a thermal imager.</li>
+		    <li><strong>Communications:</strong> Transceiver board with 435 MHz or 900 MHz options and Ethernet port for satellite modem integration.</li>
+		  </ul>
+		</section>
 
-      <section>
-        <h2>Software Infrastructure</h2>
-        <p>Expressive logging, saturation diagnostics, and modular test runners using standards-compliant math.</p>
-      </section>
+		<section>
+		  <h2>Software Integration</h2>
+		  <p>Our software stack is designed to unify hardware modules through a common, tested framework. It emphasizes modularity, reproducibility, and standards‑based communication for scalable deployment across diverse platforms.</p>
+		  <ul>
+		    <li><strong>Common_CSAT Library:</strong> Shared modules and tasks available to all hardware boards.</li>
+		    <li><strong>Superloop Driver:</strong> Customizable main loop built by including tasks from the Common_CSAT library.</li>
+		    <li><strong>Hardware Independence:</strong> Modular design, fully tested across platforms for reproducibility and reliability.</li>
+		    <li><strong>Standards‑based Communication:</strong> Integration with OpenCyphal and DroneCAN for robust system interoperability.</li>
+		  </ul>
+		</section>
     </main>
 
     <footer>
